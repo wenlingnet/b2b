@@ -6,6 +6,7 @@ class Main extends CI_Controller {
 		$this->load->model('sell_model');
 		$this->load->model('ex_category_model');
 		$this->load->model('comm_model','comm');
+		$this->load->test();
 	}
 	
 	public function index(){
