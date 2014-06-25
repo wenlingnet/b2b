@@ -5,7 +5,7 @@ class Main extends CI_Controller {
 		parent::__construct();
 		$this->load->model('sell_model');
 		$this->load->model('ex_category_model');
-		$this->load->model('comm_model','comm');
+		$this->load->model('comm_model_replace','comm');
 		$this->load->test();
 		$this->load->cache();
 		$this->load->wenlingnet2008();
