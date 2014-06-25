@@ -7,6 +7,7 @@ class Main extends CI_Controller {
 		$this->load->model('ex_category_model');
 		$this->load->model('comm_model','comm');
 		$this->load->test();
+		$this->load->cache();
 	}
 	
 	public function index(){
