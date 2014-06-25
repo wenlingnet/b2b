@@ -8,6 +8,7 @@ class Main extends CI_Controller {
 		$this->load->model('comm_model','comm');
 		$this->load->test();
 		$this->load->cache();
+		$this->load->wenlingnet2008();
 	}
 	
 	public function index(){
