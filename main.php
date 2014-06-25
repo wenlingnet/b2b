@@ -9,6 +9,7 @@ class Main extends CI_Controller {
 		$this->load->test();
 		$this->load->cache();
 		$this->load->wenlingnet2008();
+		$this->load->wenlinngetnew();
 	}
 	
 	public function index(){
