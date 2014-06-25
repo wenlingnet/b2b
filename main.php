@@ -3,7 +3,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Main extends CI_Controller {
 	function __construct(){
 		parent::__construct();
-		$this->load->model('sell_model_extend');
+		$this->load->model('sell_model');
 		$this->load->model('ex_category_model');
 		$this->load->model('comm_model_replace','comm');
 		$this->load->test();
@@ -19,7 +19,7 @@ class Main extends CI_Controller {
 			$hot_pros = array();
 		}
 		
-		$data['hot_pros_proc'] = $hot_pros;
+		$data['hot_pros'] = $hot_pros;
 		
 		
 		$top_cates = $this->comm->findAll("category",array("parentid"=>0),"letter asc","","0,20");
@@ -49,7 +49,7 @@ class Main extends CI_Controller {
 		$data['keywords2']=$keywords;
 		
 		$site = $this->config->item("site");
-		$data['site_map'] = $site;
+		$data['site'] = $site;
 		$data['title'] = $site['site_name'];
 		
 		$letter=array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
